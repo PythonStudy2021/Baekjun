@@ -14,9 +14,7 @@ for i in range(num-1):
             if not li[i][0] in liy:
                 liy.add(li[i][0])
                 ans +=1
-            break
-        else:
-            break
+        break
 li = sorted(li, key=lambda x: x[1])
 for i in range(num-1):
     for j in range(i+1,num):
@@ -24,7 +22,5 @@ for i in range(num-1):
             if not li[i][1] in lix:
                 lix.add(li[i][1])
                 ans += 1
-            break
-        else:
-            break
+        break
 print(ans)
