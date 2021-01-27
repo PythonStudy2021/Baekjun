@@ -11,3 +11,4 @@ while True:
         temp.sort()
         print(temp)
         break
+#solving
