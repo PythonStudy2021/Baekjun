@@ -18,4 +18,4 @@ while True:
                 chicken += temp
     except EOFError:
         break
-#solving
+#solving.
