@@ -13,3 +13,4 @@ for i in range(len(razor)):
             stick.pop()
             answer += 1
 print(answer)
+#re
