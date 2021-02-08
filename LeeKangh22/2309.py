@@ -1,14 +1,16 @@
-import random
-num=0
-h=[]
-temp=[]
-for i in range(0,9):
-    num=int(input())
-    h.append(num)
-while True:
-    temp=random.sample(h,7)
-    if sum(temp)==100:
-        temp.sort()
-        print(temp)
-        break
-#solving
+s = []
+for i in range(9):
+    s.append(int(input()))
+sum_s = sum(s)
+one = 0
+two = 0
+for i in range(8):
+    for j in range(i + 1, 9):
+        if sum_s - (s[i] + s[j]) == 100:
+            one = s[i]
+            two = s[j]
+s.remove(one)
+s.remove(two)
+s.sort()
+for i in s:
+    print(i)
