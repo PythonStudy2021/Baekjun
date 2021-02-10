@@ -1,12 +1,13 @@
-N,K=map(int,input().split())
-a=[]
-b=[]
-for i in range(0,N):
-    a.append(i+1)
-temp=K
-index=0
-for i in range(0,N):
-    index+=K
-    b.append(a[index-1])
-    del a[index-1]
+N,K = map(int,input().split())
+arr = [i for i in range(1,N+1)]   
 
+answer = []   
+num = 0  
+
+for t in range(N):
+    num += K-1  
+    if num >= len(arr):
+        num = num%len(arr)
+ 
+    answer.append(str(arr.pop(num)))
+print("<",", ".join(answer)[:],">", sep='')
