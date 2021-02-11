@@ -10,4 +10,4 @@ for i in range(0,n):
     for j in range(i,n):
         if spot[i][0]==spot[j][0]:
             sum+=1
-            #solving.
+          
