@@ -45,5 +45,5 @@ for i in range(0,N):
             print(1)
         elif condition==0:
             print(0)
-
+#retry
 
